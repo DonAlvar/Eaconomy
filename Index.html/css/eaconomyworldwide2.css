@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav {
+    background-color: #004aad;
+    padding:  0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: #2d2d2d;
+}
+
+nav ul li {
+    margin: 0 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    background-color: #555;
+}
+
+#king {
+    background: linear-gradient(to right, #004aad, #0096ff);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+#king h1 {
+    font-size: 3rem;
+    margin: 0;
+    /* margin-bottom: 1rem; */
+}
+
+#king p {
+    font-size: 1.2rem;
+}
+
+#about {
+    background: white;
+    padding: 3rem 1rem;
+}
+
+#product {
+    padding: 2rem 1rem;
+    background: white;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.product-card .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+
+}
+
+/* .product-card.btn:hover {
+    background-color: #0056b3;
+} */
+
+.product-card:hover {
+    
+
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color: #004aad;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-card p {
+    color: #555;
+}
+
+#features {
+    background: white;
+    padding: 2rem 1rem;
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#features ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#features ul li:hover {
+    transform: translateY(-5px);
+}
+
+#why-eaconomy {
+    background: white;
+    padding: 2rem 1rem;
+}
+
+#why-eaconomy ul li {
+    background: #009688;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#why-eaconomy ul li:hover {
+    transform: scale(1.05);
+}
+
+#broker {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
+}
+
+#broker p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#broker ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#broker ul li {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    text-align: left;
+}
+
+#broker ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#enroll {
+    background: linear-gradient(to right, #009688, #00796b);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+#enroll ol {
+    margin: 1rem auto;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: enroll-counter;
+}
+
+#enroll ol li {
+    counter-increment: enroll counter;
+    background: white;
+    color: #333;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-size: 1.1rem;
+    max-width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#enroll ol li:before {
+    content: counter(enroll-counter)".";
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    transform: translateY(-50%);
+    background: #4caf50;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#enroll ol li:hover {
+    transform: translateY(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#growth {
+    padding: 50px 0;
+    background: linear-gradient(13deg, #f0f4f7, #dbe3eb);
+    text-align: center;
+}
+
+.growth-header h2 {
+    font-size: 2.5rem;
+    color: #036;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.growth-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.growthcard-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.growth-card {
+    width: 45%;
+    padding: 20px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.growth-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.growth-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #0056b3;
+}
+
+.growth-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.growth-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#faq {
+    padding: 3rem 1rem;
+    background: #f9f9f9;
+
+}
+
+.faq-box {
+    max-width: 800px;
+    margin: 0 auto;
+
+
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1rem;
+    background: #004aad;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.faq-answer {
+    padding: 1rem;
+    background: #f5f5f5;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    opacity: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.faq-answer.show {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.arrow.rotate {
+    transform: rotate(90deg);
+}
+
+#contact p {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #009688;
+    color: white;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
