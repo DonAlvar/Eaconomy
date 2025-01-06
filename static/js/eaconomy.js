@@ -17,8 +17,8 @@ function toggleFaq(element) {
         arrow.classList.add("rotate")
     }
 }
-const menueIcon = document.getElementById('menueIcon');
-const navLinks = document.getElementById('navLinks');
+const menueIcon = document.querySelector('menueIcon');
+const navLinks = document.querySelector('navLinks');
 
 menueIcon.addEventListener('click', () => {
     menueIcon.classList.toggle('active');
