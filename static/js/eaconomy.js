@@ -17,3 +17,10 @@ function toggleFaq(element) {
         arrow.classList.add("rotate")
     }
 }
+const menueIcon = document.getElementById('menueIcon');
+const navLinks = document.getElementById('navLinks');
+
+menueIcon.addEventListener('click', () => {
+    menueIcon.classList.toggle('active');
+    navLinks.classList.toggle('show');
+});

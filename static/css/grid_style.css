@@ -42,7 +42,7 @@
     justify-content: space-between;
     align-items: center;
     margin:1em ;
-    padding: 1em;
+    padding: 1em   ;
 }
 .navbar>img{
     max-width: 100px;
