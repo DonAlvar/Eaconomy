@@ -20,6 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    overflow: visible;
 }
 
 .nav-links {
@@ -44,17 +45,19 @@ body {
 .nav-links.nav-links.show {
     display: flex;
     max-height: 300px;
+    height: auto;
 }
 
 .nav-links li {
     text-align: center;
     margin: 0 2;
     /* list-style: none; */
+    display: block;
 }
 
 .nav-links li a {
     display: block;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -473,6 +476,7 @@ footer {
         background-color: #333;
         z-index: 999;
         transition: max-height 0.3s ease;
+        overflow-y: auto;
     }
 
     .nav-links li {
