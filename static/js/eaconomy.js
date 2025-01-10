@@ -19,6 +19,7 @@ function toggleFaq(element) {
 }
 const menueIcon = document.querySelector('.menue-icon');
 const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links li a');
 
 menueIcon.addEventListener('click', () => {
     menueIcon.classList.toggle('active');
