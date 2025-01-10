@@ -37,6 +37,10 @@ body {
     /* display: flex; */
     /* justify-content: center; */
     background-color: #333;
+    z-index: 1000;
+}
+.nav-links.nav-links.show {
+    display: flex;
 }
 
 .nav-links li {
@@ -62,7 +66,7 @@ nav ul li a:hover {
 }
 
 .menue-icon {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     height: 30px;
